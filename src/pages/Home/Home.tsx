@@ -97,7 +97,7 @@ const Home: FunctionComponent = () => {
           </Row>
           {repositories.map(repository => (
             <Link key={repository.id} to={`/repositories/${repository.full_name}`}>
-              <AnimatedCard as="article" flexDirection="row" alignItems="center" mb={2}>
+              <AnimatedCard as="article" flexDirection="row" flex={1} alignItems="center" mb={2}>
                 <Avatar src={repository.owner.avatar_url} alt={repository.owner.login} mr={3} />
                 <Column justifyContent="center" flex="1px">
                   <Typography color="gray.800" fontSize={24} fontWeight={700} mb={1}>
